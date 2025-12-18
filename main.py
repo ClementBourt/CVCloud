@@ -8,3 +8,7 @@ app = Flask(__name__)
 def index():
     cv_url=url_for('static',filename='cv_Bourtguize_Ramel_Clement.pdf')
     return f'<a href = {cv_url}>CV lin</a>'
+
+@app.route("/test")
+def index():
+    return 'HEELLOOO'
